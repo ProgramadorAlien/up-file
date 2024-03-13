@@ -20,38 +20,56 @@ html body {
 }
 
 
-.btn.btn-primary.btn-lg{
-    padding: 5px 12px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 18px;
-    font-size: 14px;
-    font-weight: 500;
-    background-color: #061c64df;
-    border-radius: 8px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    width: 210px;
-    height: 40px;
-  }
 
-  .btn.btn-secondary.btn-lg{
-    padding: 5px 12px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 18px;
-    font-size: 14px;
-    font-weight: 500;
-    background-color:white;
-    border-radius: 8px;
-    text-decoration: none;
-    color:  rgba(243, 166, 23, 0.929);
-    border: solid;
-    cursor: pointer;
-    width: 210px;
-    height: 40px;
-  } 
+
+.btn.btn-primary.btn-lg,
+.btn.btn-secondary.btn-lg {
+  padding: 5px 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-left: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 210px;
+  height: 40px;
+}
+
+.btn.btn-primary.btn-lg {
+  background-color: #061c64df; /* Color de fondo original para el botón primario */
+  border: none;
+  color: white; /* Color de texto para el botón primario */
+}
+
+.btn.btn-secondary.btn-lg {
+  background-color: white; /* Color de fondo original para el botón secundario */
+  border: solid; /* Borde sólido original para el botón secundario */
+  border-color: rgba(243, 166, 23, 0.929); /* Color de borde original para el botón secundario */
+  color: rgba(243, 166, 23, 0.929); /* Color de texto original para el botón secundario */
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas */
+  .btn.btn-primary.btn-lg,
+  .btn.btn-secondary.btn-lg {
+    width: auto; /* Establece el ancho automático para permitir que los botones se ajusten */
+    margin: 5px 0; /* Ajusta el margen para espaciar los botones en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
   
 

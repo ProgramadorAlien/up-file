@@ -36,12 +36,10 @@
     font-size: 13px;
   }
 
-  .Upload-File{
-    
+
+  .Upload-File {
     padding: 5px 12px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 18px;
+    margin: 1px 0 1px 18px; /* Ajuste el margen para espaciar los botones en pantallas pequeñas */
     font-size: 14px;
     font-weight: 500;
     background-color: #061c64df;
@@ -51,10 +49,22 @@
     border: none;
     cursor: pointer;
     width: 210px;
-    height: 35px;
-      
+    min-height: 35px; /* Cambié la propiedad 'height' a 'min-height' para que el botón pueda crecer verticalmente */
   }
+  
+  @media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    .Upload-File {
+      width: auto; /* Establece el ancho automático para permitir que los botones se ajusten */
+      margin-left: 18px; /* Restablecer el margen izquierdo */
+      margin-right: 18px; /* Añadir margen derecho para espaciar los botones */
+    }
+  }
+  
+
 
   .progress-bar.bg-custom {
     background-color: rgba(243, 166, 23, 0.929);
 }
+
+
