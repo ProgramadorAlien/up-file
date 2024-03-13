@@ -74,7 +74,9 @@ p{
 }
 
 
-/* Reduce padding for specific elements */
+
+
+
 .form-select,
 /*.form-check,*/
 .d-flex {
@@ -107,7 +109,7 @@ p{
 /* Adjust width for specific elements */
 .col-lg-7,
 .col-lg-5 {
-  width: 70%; /* Adjust width as needed */
+  width: 70%; 
 }
 
 label{
