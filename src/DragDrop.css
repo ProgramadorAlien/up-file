@@ -1,0 +1,60 @@
+.drag-drop-container {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  
+  .drag-drop-content {
+    border: 3px dashed #ccc;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .uploaded-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .drag-drop-message {
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .drag-drop-message p {
+    margin: 0;
+  }
+  
+  .mb-0{
+    font-size: 13px;
+  }
+
+  .Upload-File{
+    
+    padding: 5px 12px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #061c64df;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 210px;
+    height: 35px;
+      
+  }
+
+  .progress-bar.bg-custom {
+    background-color: rgba(243, 166, 23, 0.929);
+}
