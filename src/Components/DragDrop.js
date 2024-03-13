@@ -6,13 +6,95 @@ import { faFileAlt, faFileImage  } from '@fortawesome/free-solid-svg-icons';
 
 
 function DragDrop() {
-  return (
-    <div>
-        
+    const [file, setFile] = useState(null);
+    const fileInputRef = useRef(null);
 
+    const handleDrop = (e) => {
+        e.preventDefault();
+        const droppedFile = e.dataTransfer.files[0];
+        setFile(droppedFile);
+    };
 
-    </div>
-  )
+    const handleDragOver = (e) => {
+        e.preventDefault();
+    };
+
+    const handleFileInputChange = (e) => {
+        const selectedFile = e.target.files[0];
+        setFile(selectedFile);
+    };
+
+    const handleButtonClick = () => {
+        fileInputRef.current.click();
+    };
+
+    return (
+        <div>
+            <div className="drag-drop-container" onDrop={handleDrop} onDragOver={handleDragOver}>
+                <input
+                    type="file"
+                    accept="*"
+                    onChange={handleFileInputChange}
+                    style={{ display: 'none' }}
+                    ref={fileInputRef}
+                />
+                <div className="drag-drop-content">
+                    {file ? (
+                        <div>
+                            <p>Selected file: {file.name}</p>
+                        </div>
+                    ) : (
+                        <>
+                            <div className="drag-drop-message" onClick={handleButtonClick}>
+                               {/*  <FcGallery />*/}
+                               <FontAwesomeIcon icon={faFileAlt} style={{color:"rgba(243, 166, 23, 0.929)",}}/>
+                                <p>Drag & Drop here or <b>Browse</b></p>
+                            </div>
+
+                        </>
+
+                    )}
+
+                </div>
+                <div className="mt-1"><button className='Upload-File' onClick={handleButtonClick}>Upload Manifiest</button></div>
+
+            </div>
+
+            <div class="mb-2" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
+            
+            <div className="container">
+                <div className="row justify-content-center"> {/* Centering the content */}
+                    <div className="col">
+                        <p className="mb-0" style={{ marginLeft: '50px' }}>WN-DA-072-NH20166.cvs</p>
+                    </div>
+                    <div className="col">
+                        <p className="mb-0" style={{ marginLeft: '150px' }}>5.7MB</p>
+                    </div>
+                </div>
+                <div className="container">
+                <div className="row align-items-center"> {/* Align items vertically */}
+                    <div className="col-auto">
+                    <FontAwesomeIcon icon={faFileImage} style={{color:"rgba(243, 166, 23, 0.929)",}}/> {/* Icon */}
+                    </div>
+                    <div className="col">
+                        <div className="progress" style={{ height: '4px' }}>
+                            <div
+                                className="progress-bar bg-custom"
+                                role="progressbar"
+                                style={{ width: '3%' }}
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="mt-3" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
+        </div>
+    );
 }
 
 export default DragDrop
