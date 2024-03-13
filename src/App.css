@@ -1,8 +1,11 @@
-body {
-  background-color: gray;  
+
+html body {
+  background-color: gray !important; 
   margin: 0; 
-  height: 100vh;
+  height: 100vh; 
 }
+
+
 
 .form-content {
   display: flex;

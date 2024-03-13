@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import '../DragDrop.css';
-import { FcGallery } from "react-icons/fc";
+//import { FcGallery } from "react-icons/fc";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileAlt, faFileImage  } from '@fortawesome/free-solid-svg-icons';
 
@@ -60,7 +60,7 @@ function DragDrop() {
 
             </div>
 
-            <div class="mb-2" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
+            <div className="mb-2" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
             
             <div className="container">
                 <div className="row justify-content-center"> {/* Centering the content */}
@@ -92,9 +92,9 @@ function DragDrop() {
             </div>
             </div>
 
-            <div class="mt-3" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
+            <div className="mt-3" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
         </div>
     );
 }
 
-export default DragDrop
+export default DragDrop;
