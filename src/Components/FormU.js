@@ -51,8 +51,12 @@ function FormU() {
                         <span aria-hidden="true" style={{ color: 'white' }}>&times;</span>
                     </button>
 
-                    <h2 className="text-center mt-5 mb-2" style={{ color:'#030953dd', fontFamily: 'Karla, sans-serif' }}><b>Document Upload</b></h2>
-                    <div className='col-lg-4 mx-auto mb-6' style={{ borderTop: '1px solid #ccc', marginTop: '1px', marginBottom: '50px', width: '260px' }}></div>
+
+                    <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', color:'#030953dd' }}>
+                        <h2 style={{ marginTop: '4rem', marginBottom: '2rem', position: 'relative', borderBottom: '1px solid #ccc', paddingBottom: '0.5rem', width: 'fit-content', margin: '0 auto' }}>
+                            Document Upload
+                        </h2>
+                    </div>
 
 
                     <div className="row">
@@ -62,7 +66,7 @@ function FormU() {
                                     className="form-select"
                                     value={importName}
                                     onChange={handleImportNameChange}
-                                    style={{ padding: '2px', color: '#030953dd', fontWeight: 'bold',  border: '2px solid #ccc', height: '40px', fontSize:'15px' }}
+                                    style={{ padding: '2px', color: '#030953dd', fontWeight: 'bold', border: '2px solid #ccc', height: '40px', fontSize: '15px' }}
                                 >
                                     <option value="" disabled>Select import Name</option>
                                     <option value="name1">Name 1</option>
@@ -241,7 +245,7 @@ function FormU() {
                                             className="form-select"
                                             value={selectedOption}
                                             onChange={handleOptionChange}
-                                           
+
                                         >
                                             <option value="" disabled>Select Client</option>
                                             <option value="option1">Option 1</option>
