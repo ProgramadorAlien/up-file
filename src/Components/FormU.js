@@ -32,7 +32,8 @@ function FormU() {
     };
 
     return (
-        <main>
+        <div style={{ marginBottom: '70px' }}>
+        <main style={{ marginTop: '70px' }}>
 
             <div className="form-content">
                 <div className="container">
@@ -52,8 +53,8 @@ function FormU() {
                     </button>
 
 
-                    <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', color:'#030953dd' }}>
-                        <h2 style={{ marginTop: '4rem', marginBottom: '2rem', position: 'relative', borderBottom: '1px solid #ccc', paddingBottom: '0.5rem', width: 'fit-content', margin: '0 auto' }}>
+                    <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', color:'#030953dd', marginBottom: '2rem' }}>
+                        <h2 style={{ marginTop: '0rem', marginBottom: '2rem', position: 'relative', borderBottom: '1px solid #ccc', paddingBottom: '0.5rem', width: 'fit-content', margin: '0 auto' }}>
                             Document Upload
                         </h2>
                     </div>
@@ -73,20 +74,20 @@ function FormU() {
                                     <option value="name2">Name 2</option>
                                     <option value="name3">Name 3</option>
                                 </select>
-                                <div className='col-lg-6' style={{ borderTop: '1px solid #ccc', marginTop: '20px' }}></div>
-                                <div className="mt-3"><p className="blueText"><b>Select a manifest that you like to import</b></p></div>
+                                <div className='col-lg-7' style={{ borderTop: '1px solid #ccc', marginTop: '15px' }}></div>
+                                <div className="mt-2 mb-1"><p className="blueText mb-2"><b>Select a manifest that you like to import</b></p></div>
                                 <div>
                                     <DragDrop /> {/* Componente DragDrop */}
                                 </div>
 
-                                <div className='col-lg-6' style={{ borderTop: '1px solid #ccc', marginTop: '15px' }}></div>
-                                <div><p className="mt-3"><b>Elapse Date Checking:</b></p>
-                                    <p className="mt-2">No Elapse Dates!</p>
+                                <div className='col-lg-7' style={{ borderTop: '1px solid #ccc', marginTop: '15px' }}></div>
+                                <div><p className="mt-1 mb-2"><b>Elapse Date Checking:</b></p>
+                                    <p className="mt-2 mb-2">No Elapse Dates!</p>
                                 </div>
-                                <div className='col-lg-6' style={{ borderTop: '1px solid #ccc', marginTop: '10px' }}></div>
-                                <div className="mt-3"><p className="blueText"><b>Tolerance Windows</b></p></div>
+                                <div className='col-lg-7' style={{ borderTop: '1px solid #ccc', marginTop: '2px' }}></div>
+                                <div className="mt-2"><p className="blueText mb-1"><b>Tolerance Windows</b></p></div>
 
-                                <div className="row justify-content-left" style={{ marginTop: '8px' }}>
+                                <div className="row justify-content-left" style={{ marginTop: '1px' }}>
                                     <div className="col-md-auto" style={{ marginRight: '0px', paddingRight: '1px' }}>
                                         {/*<FontAwesomeIcon icon={faToggleOn} flip="vertical" size="2x" style={{ color: "#12197d" }} /> */}
                                         <Toggle />  {/*Render Toggle component */}
@@ -136,7 +137,7 @@ function FormU() {
                                 <div style={{ marginTop: '10px' }}></div>
                             </div>
                             <div className='col-lg-9' style={{ borderTop: '1px solid #ccc', marginTop: '0px' }}></div>
-                            <div><p className="mt-3"><b>Location Checking</b></p>
+                            <div><p className="mt-3 mb-1"><b>Location Checking:</b></p>
                                 <p className="mt-2 mb-1">All Available!</p>
                             </div>
                             <div className='col-lg-9' style={{ borderTop: '1px solid #ccc', marginTop: '0px' }}></div>
@@ -279,8 +280,8 @@ function FormU() {
                 </div>
             </div>
 
-
         </main>
+        </div>
     )
 };
 

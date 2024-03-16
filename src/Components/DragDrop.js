@@ -93,7 +93,7 @@ function DragDrop() {
                 </div>
             </div>
 
-            <div className="mt-3" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
+            <div className="mt-1" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
         </div>
     );
 }

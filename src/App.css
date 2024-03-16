@@ -13,14 +13,14 @@ html body {
 
 .form-content {
   display: flex;
-  position:relative;
-  background-color:white;
+  position: relative;
+  background-color: white;
   align-items: center;
-  margin: 5% 20%; 
-  font-size: 18px;
-  padding-left: 6%;
-  padding-right: 6%;
-  border-radius: 20px; 
+  margin: 2% 20%; /* Reduced top and bottom margins */
+  font-size: 18px; /* Reduced font size */
+  padding: 2% 6%; /* Adjusted padding */
+  
+  border-radius: 20px;
 }
 
 
@@ -74,7 +74,7 @@ html body {
 }
 
 p{
-  font-size: 16px;
+  font-size: 14px;
   color:#030953dd
   
 }
