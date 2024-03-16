@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
+
+
+
 
 html body {
   background-color: gray !important; 
@@ -39,39 +43,26 @@ html body {
 }
 
 .btn.btn-primary.btn-lg {
-  background-color: #061c64df; /* Color de fondo original para el botón primario */
+  background-color: #061c64df;
   border: none;
-  color: white; /* Color de texto para el botón primario */
+  color: white; 
 }
 
 .btn.btn-secondary.btn-lg {
-  background-color: white; /* Color de fondo original para el botón secundario */
-  border: solid; /* Borde sólido original para el botón secundario */
-  border-color: rgba(243, 166, 23, 0.929); /* Color de borde original para el botón secundario */
-  color: rgba(243, 166, 23, 0.929); /* Color de texto original para el botón secundario */
+  background-color: white; 
+  border: solid; 
+  border-color: rgba(243, 166, 23, 0.929); 
+  color: rgba(243, 166, 23, 0.929); 
 }
 
 @media (max-width: 768px) {
-  /* Estilos para pantallas más pequeñas */
+  
   .btn.btn-primary.btn-lg,
   .btn.btn-secondary.btn-lg {
-    width: auto; /* Establece el ancho automático para permitir que los botones se ajusten */
-    margin: 5px 0; /* Ajusta el margen para espaciar los botones en pantallas pequeñas */
+    width: auto; 
+    margin: 5px 0; 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 
 
@@ -85,6 +76,7 @@ html body {
 p{
   font-size: 16px;
   color:#030953dd
+  
 }
 
 .mt-2{
@@ -99,28 +91,21 @@ p{
 /*.form-check,*/
 .d-flex {
   padding: 5px; /* Adjust padding as needed */
-  font-size: 22px;
+  font-size: 18px;
 }
+
 
 .form-check{
   font-size: 22px;
 }
 
-.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
-  background-color:white; /* Cambia el color del check cuando está seleccionado */
-}
 
-.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: #061c64df; /* Cambia el color del switch cuando está seleccionado */
-}
 
-.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
-  border-color: #061c64df; /* Cambia el color del área vacía del check cuando está seleccionado */
-}
 
 .custom-switch .form-check-label {
   color:#030953dd; /* Change the color to your desired color */
 }
+
 
 
 
@@ -136,4 +121,88 @@ label{
 
 .d-flex.flex-column label{
 color: #030953dd;
+}
+
+
+
+/* CSS */
+.form-check {
+  display: flex;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+}
+
+.form-check-input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #061c64df; /* Border color */
+  border-radius: 50%; /* Makes the border round */
+  background-color: white; /* Background color */
+  outline: none;
+  cursor: pointer;
+  margin-right: 5px; /* Ajusta el espaciado si es necesario */
+  position: relative; /* Agrega posición relativa */
+  outline: 0;
+  box-shadow: none;
+  -webkit-appearance: none; /* Override default appearance */
+  -moz-appearance: none; /* Override default appearance */
+  appearance: none; /* Override default appearance */
+}
+
+/* CSS para cuando el radio button está seleccionado */
+.form-check-input[type="radio"]:checked {
+  background-color: white; /* Cambia el color de fondo cuando está seleccionado */
+  border-color: #061c64df; /* Cambia el color del borde cuando está seleccionado */
+  outline: none;
+}
+
+/* Agrega relleno para el espacio blanco */
+.form-check-input[type="radio"]:checked::before {
+  content: '';
+  display: block;
+  width: 10px; /* Ajusta el ancho del relleno */
+  height: 10px; /* Ajusta la altura del relleno */
+  border-radius: 50%;
+  background-color: #061c64df; /* Coincide con el color de fondo */
+  position: absolute; /* Posición absoluta */
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Traduce al centro */
+  
+}
+
+.form-check-input[type="radio"] {
+  outline: none; /* Elimina cualquier contorno adicional */
+  outline: 0;
+}
+
+/* Oculta el radio button por defecto */
+.form-check-input[type="radio"]::-ms-check,
+.form-check-input[type="radio"]::-webkit-check {
+  display: none;
+}
+
+/* Ajusta la alineación de la etiqueta */
+.form-check-label {
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+.custom-switch .form-check-input:checked + .form-check-label::before {
+  background-color: white; /* Change background color when switch is active */
+}
+
+.custom-switch .form-check-input {
+  background-color:#061c64df !important; /* Change background color of switch toggle */
+  height: 25px;
 }
