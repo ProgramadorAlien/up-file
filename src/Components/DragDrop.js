@@ -47,7 +47,7 @@ function DragDrop() {
                         <>
                             <div className="drag-drop-message" onClick={handleButtonClick}>
                                 {/*  <FcGallery />*/}
-                                <FontAwesomeIcon icon={faFileAlt} style={{ color: "rgba(243, 166, 23, 0.929)", }} />
+                                <FontAwesomeIcon icon={faFileAlt} style={{ color: "#FB9D27", }} />
                                 <p>Drag & Drop here or <b>Browse</b></p>
                             </div>
 
@@ -63,19 +63,18 @@ function DragDrop() {
             <div className="mb-2" style={{ borderTop: '1px solid #ccc', marginTop: '5px' }}></div>
 
             <div className="container">
-                <div className="row justify-content-center text-center"> {/* Centering the content horizontally and vertically */}
-                    <div className="col mb-3 mb-md-0">
-                        <p className="mb-0">WN-DA-072-NH20166.cvs</p>
+                <div className="row justify-content-center text-center">
+                    <div className="col-6 mb-3 mb-md-0 text-md-right"> {/* Adjust column size and alignment */}
+                        <p className="mb-0 gray-text">WN-DA-072-NH20166.cvs</p>
                     </div>
-                    <div className="w-100 d-md-none"></div> {/* Add a full-width spacer visible only on small screens */}
-                    <div className="col">
-                        <p className="mb-0">5.7MB</p>
+                    <div className="col-6 mb-3 mb-md-0 text-md-left"> {/* Adjust column size and alignment */}
+                        <p className="mb-0 gray-text">5.7MB</p>
                     </div>
                 </div>
                 <div className="container">
                     <div className="row align-items-center"> {/* Align items vertically */}
                         <div className="col-auto">
-                            <FontAwesomeIcon icon={faFileImage} style={{ color: "rgba(243, 166, 23, 0.929)", }} /> {/* Icon */}
+                            <FontAwesomeIcon icon={faFileImage} style={{ color: "#FB9D27", }} /> {/* Icon */}
                         </div>
                         <div className="col">
                             <div className="progress" style={{ height: '4px' }}>

@@ -44,7 +44,7 @@
   margin-left: 18px;
   font-size: 14px;
   font-weight: 500;
-  background-color: #061c64df;
+  background-color: #1D3E66;
   color: white;
   border-radius: 8px;
   text-decoration: none;
@@ -65,7 +65,10 @@
 }
 
 .progress-bar.bg-custom {
-  background-color: rgba(243, 166, 23, 0.929);
+  background-color:#FB9D27;
 }
 
+.gray-text {
+  color: #646464;
+}
 

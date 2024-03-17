@@ -43,7 +43,7 @@ html body {
 }
 
 .btn.btn-primary.btn-lg {
-  background-color: #061c64df;
+  background-color: #1D3E66;
   border: none;
   color: white; 
 }
@@ -51,8 +51,8 @@ html body {
 .btn.btn-secondary.btn-lg {
   background-color: white; 
   border: solid; 
-  border-color: rgba(243, 166, 23, 0.929); 
-  color: rgba(243, 166, 23, 0.929); 
+  border-color: #FB9D27; 
+  color: #FB9D27; 
 }
 
 @media (max-width: 768px) {
@@ -70,12 +70,12 @@ html body {
 /* Reduce font size for specific elements */
 .blueText1 {
   font-size: 16px;
-  color:#160776e1;
+  color:#1D3E66;
 }
 
 p{
   font-size: 14px;
-  color:#030953dd
+  color:#1D3E66;
   
 }
 
@@ -103,7 +103,7 @@ p{
 
 
 .custom-switch .form-check-label {
-  color:#030953dd; /* Change the color to your desired color */
+  color:#1D3E66; /* Change the color to your desired color */
 }
 
 
@@ -120,7 +120,7 @@ label{
 }
 
 .d-flex.flex-column label{
-color: #030953dd;
+color:#1D3E66;
 }
 
 
@@ -142,7 +142,7 @@ color: #030953dd;
   -moz-appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid #061c64df; /* Border color */
+  border: 2px solid#1D3E66; /* Border color */
   border-radius: 50%; /* Makes the border round */
   background-color: white; /* Background color */
   outline: none;
@@ -159,7 +159,7 @@ color: #030953dd;
 /* CSS para cuando el radio button está seleccionado */
 .form-check-input[type="radio"]:checked {
   background-color: white; /* Cambia el color de fondo cuando está seleccionado */
-  border-color: #061c64df; /* Cambia el color del borde cuando está seleccionado */
+  border-color: #1D3E66; /* Cambia el color del borde cuando está seleccionado */
   outline: none;
 }
 
@@ -170,7 +170,7 @@ color: #030953dd;
   width: 10px; /* Ajusta el ancho del relleno */
   height: 10px; /* Ajusta la altura del relleno */
   border-radius: 50%;
-  background-color: #061c64df; /* Coincide con el color de fondo */
+  background-color: #1D3E66; /* Coincide con el color de fondo */
   position: absolute; /* Posición absoluta */
   top: 50%; /* Centra verticalmente */
   left: 50%; /* Centra horizontalmente */
@@ -203,6 +203,11 @@ color: #030953dd;
 }
 
 .custom-switch .form-check-input {
-  background-color:#061c64df !important; /* Change background color of switch toggle */
+  background-color:#1D3E66 !important; /* Change background color of switch toggle */
   height: 25px;
+}
+
+
+.iconclock-container{
+  color: #1D3E66;
 }

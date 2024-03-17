@@ -95,7 +95,7 @@ function FormU() {
                                     <div className="col-md-auto" style={{ marginRight: '0px', marginTop: '9px' }}>
                                         <p>|</p>
                                     </div>
-                                    <div className="col-md-auto" style={{ marginRight: '0px', paddingRight: '0px', paddingLeft: '1px', marginBottom: '0px', marginTop: '6px' }}>
+                                    <div className="col-md-auto iconclock-container" style={{ marginRight: '0px', paddingRight: '0px', paddingLeft: '1px', marginBottom: '0px', marginTop: '6px' }}>
                                         <LuClock7 />
                                     </div>
                                     <div className="col-md-auto" style={{ marginRight: '0px', paddingRight: '0px', marginBottom: '8px', marginTop: '8px' }}>
@@ -191,7 +191,7 @@ function FormU() {
                                             <option value="option3">Option 3</option>
                                         </select>
                                     </div>
-                                    <div>
+                                    <div className="iconclock-container">
                                         <LuClock7 />
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@ function FormU() {
                                             <option value="option3">Option 3</option>
                                         </select>
                                     </div>
-                                    <div>
+                                    <div className="iconclock-container">
                                         <LuClock7 />
                                     </div>
                                 </div>
@@ -232,7 +232,7 @@ function FormU() {
                                         </select>
                                     </div>
                                     <div>
-                                        <div>
+                                        <div className="iconclock-container">
                                             <LuClock7 />
                                         </div>
                                     </div>
@@ -254,7 +254,7 @@ function FormU() {
                                             <option value="option3">Option 3</option>
                                         </select>
                                     </div>
-                                    <div>
+                                    <div className="iconclock-container">
                                         <LuClock7 />
                                     </div>
                                 </div>
