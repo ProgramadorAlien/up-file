@@ -4,7 +4,7 @@
 
 
 html body {
-  background-color: gray !important; 
+  background-color: #B4B4B5; 
   margin: 0; 
   height: 100vh; 
 }
@@ -80,7 +80,7 @@ p{
 }
 
 .mt-2{
-  color:#1eb208f4;
+  color:#FB9D27
 }
 
 
