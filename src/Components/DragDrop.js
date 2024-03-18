@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileAlt, faFileImage } from '@fortawesome/free-solid-svg-icons';
 
 
-function DragDrop() {
+function DragDrop({onFileChange}) {
     const [file, setFile] = useState(null);
     const fileInputRef = useRef(null);
 
@@ -13,6 +13,8 @@ function DragDrop() {
         e.preventDefault();
         const droppedFile = e.dataTransfer.files[0];
         setFile(droppedFile);
+        // Call the function passed down from FormU to handle file change
+        onFileChange(droppedFile);
     };
 
     const handleDragOver = (e) => {
@@ -22,6 +24,8 @@ function DragDrop() {
     const handleFileInputChange = (e) => {
         const selectedFile = e.target.files[0];
         setFile(selectedFile);
+        // Call the function passed down from FormU to handle file change
+        onFileChange(selectedFile);
     };
 
     const handleButtonClick = () => {

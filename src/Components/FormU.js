@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { faToggleOn } from '@fortawesome/free-solid-svg-icons';
 import { LuClock7 } from "react-icons/lu";
@@ -14,6 +14,13 @@ function FormU() {
     const [splitSchedule, setSplitSchedule] = useState('');
     const [selectedOption, setSelectedOption] = useState('');
     const [scheduleType, setScheduleType] = useState('');
+    const [selectedFile, setSelectedFile] = useState(null);
+
+     // Define function to handle selected file change
+     const handleFileChange = (file) => {
+        setSelectedFile(file);
+    };
+
 
     const handleImportNameChange = (e) => {
         setImportName(e.target.value);
@@ -30,6 +37,15 @@ function FormU() {
     const handleScheduleTypeChange = (e) => {
         setScheduleType(e.target.value);
     };
+
+    //------------useEffectHook
+     // Log selectedFile whenever it changes
+     useEffect(() => {
+        if (selectedFile !== null) {
+        console.log("Selected File in useEffect:", selectedFile);
+        }
+    }, [selectedFile]);
+
 
     return (
         <div style={{ marginBottom: '70px' }}>
@@ -65,6 +81,7 @@ function FormU() {
                             <div style={{ paddingRight: '22px' }}>
                                 <select
                                     className="form-select"
+                                    id='select-importname'
                                     value={importName}
                                     onChange={handleImportNameChange}
                                     style={{ padding: '2px', color: '#030953dd', fontWeight: 'bold', border: '2px solid #ccc', height: '40px', fontSize: '15px' }}
@@ -77,7 +94,7 @@ function FormU() {
                                 <div className='col-lg-7' style={{ borderTop: '1px solid #ccc', marginTop: '15px' }}></div>
                                 <div className="mt-2 mb-1"><p className="blueText mb-2"><b>Select a manifest that you like to import</b></p></div>
                                 <div>
-                                    <DragDrop /> {/* Componente DragDrop */}
+                                    <DragDrop onFileChange={handleFileChange} /> {/* Componente DragDrop */}
                                 </div>
 
                                 <div className='col-lg-7' style={{ borderTop: '1px solid #ccc', marginTop: '15px' }}></div>
@@ -177,11 +194,13 @@ function FormU() {
                             <div className="d-flex flex-column">
                                 <div className="d-flex align-items-center justify-content-between mb-2">
                                     <div>
-                                        <label>Testing Center 1</label>
+                                        <label htmlFor='select-client1'>Testing Center 1</label>
                                     </div>
                                     <div>
                                         <select
                                             className="form-select"
+                                            id='select-client1'
+                                            name='select-client1'
                                             value={selectedOption}
                                             onChange={handleOptionChange}
                                         >
@@ -197,11 +216,13 @@ function FormU() {
                                 </div>
                                 <div className="d-flex align-items-center justify-content-between mb-2">
                                     <div>
-                                        <label>Testing Center 2</label>
+                                        <label htmlFor='select-client2'>Testing Center 2</label>
                                     </div>
                                     <div>
                                         <select
                                             className="form-select "
+                                            id='select-client2'
+                                            name='select-client2'
                                             value={selectedOption}
                                             onChange={handleOptionChange}
                                         >
@@ -217,11 +238,13 @@ function FormU() {
                                 </div>
                                 <div className="d-flex align-items-center justify-content-between mb-2">
                                     <div>
-                                        <label>Testing Center 3</label>
+                                        <label htmlFor='select-client3' >Testing Center 3</label>
                                     </div>
                                     <div>
                                         <select
                                             className="form-select "
+                                            id='select-client3'
+                                            name='select-client3'
                                             value={selectedOption}
                                             onChange={handleOptionChange}
                                         >
@@ -239,11 +262,13 @@ function FormU() {
                                 </div>
                                 <div className="d-flex align-items-center justify-content-between mb-2">
                                     <div>
-                                        <label>Testing Center 4</label>
+                                        <label htmlFor='select-client4'>Testing Center 4</label>
                                     </div>
                                     <div>
                                         <select
                                             className="form-select"
+                                            id='select-client4'
+                                            name='select-client4'
                                             value={selectedOption}
                                             onChange={handleOptionChange}
 
